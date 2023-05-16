@@ -1,0 +1,15 @@
+<div class="container" style="display: block; width:550px;margin:0 auto;">
+  <h1 style="text-align:center;">Account Login</h1>
+  <form action="/login" method="post">
+    <div style="text-align:center; ">
+      <input type="text" name="email" style="margin: 5px" placeholder="email" required>
+    </div>
+    <div style="text-align:center;">
+      <input type="password" style="margin: 5px" name="password" placeholder="Password" required>
+    </div>
+    <div style="text-align:center;">
+      <button style="margin: 5px;" type="submit">Sing in</button>
+    </div>
+  </form>
+  {{#if loingError}}<p style="text-align:center;color:red;">email 或 Password 錯誤</p>{{/if}}
+</div>
